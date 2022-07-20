@@ -1,0 +1,18 @@
+[
+  {
+    "name": "nome",
+    "pattern": "(\\bNatalia\\b|\\bAsya\\b|\\bGianmarco\\b|\\bSofia\\b|\\bAurora\\b|\\bGiulia\\b|\\bGinevra\\b|\\bAlice\\b|\\bEmma\\b|\\bGiorgia\\b|\\bBeatrice\\b|\\bGreta\\b|\\bVittoria\\b|\\bDomenico\\b|\\bAlessandro\\b|\\bLorenzo\\b|\\bDiego\\b|\\bTommaso\\b|\\bRiccardo\\b|\\bMatteo\\b|\\bLorenzo\\b|\\bLeonardo\\b|\\bGabriele\\b|\\bEdoardo\\b|\\bSamuele\\b|\\bLuca\\b|\\bFilippo\\b|\\bDaniele\\b|\\bNicolò\\b|\\bAlessio\\b|\\bMattia\\b)"
+  },
+  {
+    "name": "prodotto",
+    "pattern": "(\\bBaby\\ Robot\\b|\\bBaby\\ Octo\\b|\\bEsploramondo\\ Digital\\b|\\bNail\\ Art\\ studio\\b|\\bScienze\\ al\\ microscopio\\b|\\bIl\\ collegio\\b|\\bRobot\\ in\\ movimento\\b|\\bTombola\\b|\\bMistery\\ English\\b|\\bPlay\\ Creative\\ Minimarket\\b|\\bBeauty\\ science\\b|\\bNail\\ mania\\b|\\bCrazy\\ artist\\b|\\bDove\\ lo\\ metto\\b|\\bIl\\ giardino\\ di\\ Bing\\b|\\bGioca\\ e\\ associa\\b|\\bMarvel\\ 1000\\ pezzi\\b|\\bMarvel\\ Avengers\\ 1000\\ pezzi\\b|\\bIl\\ tappeto\\ gigante\\ interattivo\\b|\\bMagic\\ Crystal\\ set\\b|\\bSpa\\ laboratory\\b|\\bIce\\ Lolly\\b|\\bSweet\\ cloud\\ cot\\ mobile\\b|\\bKaty\\ the\\ kitty\\b|\\bDraghetto\\ birichino\\b|\\bBetta\\ dolce\\ orsetta\\b|\\bGiostra\\ degli\\ animali\\b|\\bValentino\\ Scooterino\\b|\\bIppopotamo\\ ballerino\\b|\\bBubu\\ cagnolino\\ Cucu\\b|\\bLa\\ mia\\ prima\\ macchinina\\b|\\bTellie\\b|\\bRubamazzo\\b|\\bMimo\\b|\\bPrimo\\ alfabeto\\b|\\bButterfly\\ beauty\\ set\\b|\\bEcosystem\\b|\\bJewels\\ Collections\\b)"
+  },
+  {
+    "name": "personaggio",
+    "pattern": "(\\bMarvel\\b|\\bFrozen\\b|\\bMe\\ contro\\ Te\\b|\\bBing\\b)"
+  },
+  {
+    "name": "età",
+    "pattern": "(\\b0\\b|\\b6\\b|\\b9\\b|\\b1\\-3\\b|\\b4\\-6\\b|\\b7\\-9\\b|\\b10\\b)"
+  }
+]

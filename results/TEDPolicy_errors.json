@@ -1,0 +1,75 @@
+[
+  {
+    "text": "Ciao, mi chiamo Natalia",
+    "entities": [
+      {
+        "start": 16,
+        "end": 23,
+        "value": "Natalia",
+        "entity": "nome"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "vorrei acquistare Dove lo metto?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 31,
+        "value": "Dove lo metto",
+        "entity": "prodotto"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Bene, vorrei un gioco con i personaggi della Marvel",
+    "entities": [
+      {
+        "start": 45,
+        "end": 51,
+        "value": "Marvel",
+        "entity": "personaggio"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "sto cercando un gioco dei Me contro Te",
+    "entities": [
+      {
+        "start": 26,
+        "end": 38,
+        "value": "Me contro Te",
+        "entity": "personaggio"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "vorrei sapere qualcosa su Luì e Sofì crazy artist",
+    "entities": [
+      {
+        "text": "vorrei sapere qualcosa su Luì e Sofì crazy artist",
+        "start": 37,
+        "end": 49,
+        "entity": "prodotto",
+        "value": "crazy artist"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Ciao, mi chiamo Natalia",
+    "entities": [
+      {
+        "start": 16,
+        "end": 23,
+        "value": "Natalia",
+        "entity": "nome"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

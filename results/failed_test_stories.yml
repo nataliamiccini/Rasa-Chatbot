@@ -1,0 +1,16 @@
+version: "3.0"
+stories:
+- story: prodotto (.\tests\test_stories.yml)
+  steps:
+  - intent: chi
+    entities:
+    - personaggio: Me contro Te
+  - slot_was_set:
+    - personaggio: Me contro Te
+  - action: action_Personaggio
+  - intent: quale_prodotto
+    entities:
+    - prodotto: crazy artist
+  - slot_was_set:
+    - prodotto: crazy artist
+  - action: action_Prodotto

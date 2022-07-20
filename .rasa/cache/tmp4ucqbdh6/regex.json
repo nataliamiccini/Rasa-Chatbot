@@ -1,0 +1,14 @@
+[
+  {
+    "name": "prodotto",
+    "pattern": "(\\bBaby\\ Robot\\b|\\bBaby\\ Octo\\b|\\bEsploramondo\\ Digital\\b|\\bNail\\ Art\\ studio\\b|\\bScienze\\ al\\ microscopio\\b|\\bIl\\ collegio\\b|\\bRobot\\ in\\ movimento\\b|\\bTombola\\b|\\bMistery\\ English\\b|\\bPlay\\ Creative\\ Minimarket\\b|\\bBeauty\\ science\\b|\\bLuì\\ e\\ Sofì\\ Nail\\ mania\\b|\\bLuì\\ e\\ Sofì\\ crazy\\ artist\\b|\\bDove\\ lo\\ metto\\?\\b|\\bIl\\ giardino\\ di\\ Bing\\b|\\bGioca\\ e\\ associa\\b|\\bMarvel\\ 1000\\ pezzi\\b|\\bMarvel\\ Avengers\\ 1000\\ pezzi\\b|\\bUltimate\\ Spiderman\\b|\\bMagic\\ Crystal\\ set\\b|\\bSpa\\ laboratory\\b|\\bIce\\ Jolly\\b)"
+  },
+  {
+    "name": "personaggio",
+    "pattern": "(\\bMarvel\\b|\\bFrozen\\b|\\bMe\\ contro\\ Te\\b|\\bBing\\b)"
+  },
+  {
+    "name": "eta",
+    "pattern": "(\\b0\\b|\\b6\\b|\\b9\\b|\\b1\\-3\\b|\\b4\\-6\\b|\\b7\\-9\\b|\\b10\\b)"
+  }
+]

@@ -1,0 +1,106 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: luogo
+  steps:
+  - user: |
+      Buongiorno
+    intent: start
+  - action: utter_nome
+  - user: |
+      Ciao, mi chiamo [Natalia]{"entity":"nome"}
+    intent: nome_personale
+  - action: utter_salutiINIZIO
+  - user: |
+      vorrei avere alcune informazioni sul luogo dell'azienda
+    intent: luoghi
+  - action: utter_luoghi
+  - user: |
+      Ok, grazie mille!
+    intent: salutiFINE
+  - action: utter_salutiFINE
+
+- story: prodottoSpecifico
+  steps:
+  - user: |
+      Sto cercando un prodotto da comprare.
+    intent: cercaProdotto
+  - action: utter_Prodotto
+  - user: |
+      vorrei acquistare [Dove lo metto]{"entity":"prodotto"}?
+    intent: quale_prodotto
+  - action: action_Prodotto
+  - user: |
+      Ok, grazie mille!
+    intent: salutiFINE
+  - action: utter_salutiFINE
+
+- story: prodottoPersonaggi
+  steps:
+  - user: |
+      Sto cercando un prodotto da comprare.
+    intent: cercaProdotto
+  - action: utter_Prodotto
+  - user: |
+      che personaggi ci sono disponibili?
+    intent: chi_avete
+  - action: utter_Personaggi
+  - action: utter_Personaggi1
+  - action: utter_Personaggi2
+  - action: utter_Personaggi3
+  - action: utter_Personaggi4
+  - action: utter_Personaggi5
+  - user: |
+      Bene, vorrei un gioco con i personaggi della [Marvel]{"entity":"personaggio"}
+    intent: chi
+  - action: action_Personaggio
+  - user: |
+      Ok, grazie mille!
+    intent: salutiFINE
+  - action: utter_salutiFINE
+
+- story: prodotto
+  steps:
+  - user: |
+      sto cercando un gioco dei [Me contro Te]{"entity":"personaggio"}
+    intent: chi
+  - action: action_Personaggio
+  - user: |
+      vorrei sapere qualcosa su Luì e Sofì [crazy artist]{"entity":"prodotto"} 
+    intent: quale_prodotto
+  - action: action_Prodotto
+
+
+- story: sad path 3
+  steps:
+  - user: |
+      Buongiorno
+    intent: start
+  - action: utter_nome
+  - user: |
+      Ciao, mi chiamo [Natalia]{"entity":"nome"}
+    intent: nome_personale
+  - action: utter_salutiINIZIO
+  - user: |
+      vorrei fare una ricerca in base all'età
+    intent: filtra_eta
+  - action: action_my_eta
+
+- story: say goodbye
+  steps:
+  - user: |
+      Ok, grazie mille e arrivederci!
+    intent: salutiFINE
+  - action: utter_salutiFINE
+  - user: |
+      vorrei continuare
+    intent: continue
+  - action: action_my_fallback
+
+- story: bot challenge
+  steps:
+  - user: |
+      non so cosa fare
+    intent: out_of_scope
+  - action: action_my_fallback

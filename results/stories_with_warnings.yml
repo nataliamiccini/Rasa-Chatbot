@@ -1,0 +1,14 @@
+version: "3.0"
+stories:
+- story: sad path 3 (.\tests\test_stories.yml)
+  steps:
+  - intent: start
+  - action: utter_nome
+  - intent: nome_personale
+    entities:
+    - nome: Natalia
+  - slot_was_set:
+    - nome: Natalia
+  - action: utter_salutiINIZIO
+  - intent: filtra_eta
+  - action: action_my_eta  # predicted: action_unlikely_intent

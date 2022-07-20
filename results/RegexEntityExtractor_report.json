@@ -1,0 +1,48 @@
+{
+  "nome": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "prodotto": {
+    "precision": 0.9166666666666666,
+    "recall": 0.9428571428571428,
+    "f1-score": 0.9295774647887323,
+    "support": 35,
+    "confused_with": {}
+  },
+  "età": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 7,
+    "confused_with": {}
+  },
+  "personaggio": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9444444444444444,
+    "recall": 0.9622641509433962,
+    "f1-score": 0.9532710280373832,
+    "support": 53
+  },
+  "macro avg": {
+    "precision": 0.9791666666666666,
+    "recall": 0.9857142857142858,
+    "f1-score": 0.982394366197183,
+    "support": 53
+  },
+  "weighted avg": {
+    "precision": 0.9449685534591195,
+    "recall": 0.9622641509433962,
+    "f1-score": 0.9534945522189742,
+    "support": 53
+  }
+}

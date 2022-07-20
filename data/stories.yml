@@ -1,0 +1,134 @@
+version: "3.0"
+
+stories:
+
+- story: continue
+  steps:
+  - intent: continue
+  - action: action_my_fallback
+
+- story: saluti
+  steps:
+  - intent: Negativo
+  - action: utter_saluti
+
+- story: Luogo_breve
+  steps:
+  - intent: luoghi
+  - action: utter_luoghi
+
+- story: Luogo_lungo
+  steps:
+  - intent: start
+  - action: utter_nome
+  - intent: nome_personale
+  - action: utter_salutiINIZIO
+  - intent: luoghi
+  - action: utter_luoghi
+  - intent: salutiFINE
+  - action: utter_salutiFINE
+
+- story: Orari_breve
+  steps:
+  - intent: orari_giorni
+  - action: utter_giorni_orari
+
+- story: Orari_lungo
+  steps:
+  - intent: start
+  - action: utter_nome
+  - intent: nome_personale
+  - action: utter_salutiINIZIO
+  - intent: orari_giorni
+  - action: utter_giorni_orari
+  - intent: salutiFINE
+  - action: utter_salutiFINE
+
+- story: Info_breve
+  steps:
+  - intent: info_clementoni
+  - action: utter_info
+
+- story: Info_lungo
+  steps:
+  - intent: start
+  - action: utter_nome
+  - intent: nome_personale
+  - action: utter_salutiINIZIO
+  - intent: info_clementoni
+  - action: utter_info
+  - intent: salutiFINE
+  - action: utter_salutiFINE
+
+- story: Prodotto_breve
+  steps:
+  - intent: cercaProdotto
+  - action: utter_Prodotto
+  - intent: quale_prodotto
+  - action: action_Prodotto
+
+- story: Prodotto_lungo
+  steps:
+  - intent: start
+  - action: utter_nome
+  - intent: nome_personale
+  - action: utter_salutiINIZIO
+  - intent: cercaProdotto
+  - action: utter_Prodotto
+  - intent: quale_prodotto
+  - action: action_Prodotto
+  - intent: salutiFINE
+  - action: utter_salutiFINE
+
+- story: Personaggio
+  steps:
+  - intent: cercaProdotto
+  - action: utter_Prodotto
+  - intent: chi
+  - action: action_Personaggio
+
+- story: Personaggio
+  steps:
+  - intent: start
+  - action: utter_nome
+  - intent: nome_personale
+  - action: utter_salutiINIZIO
+  - intent: cercaProdotto
+  - action: utter_Prodotto
+  - intent: chi_avete
+  - action: utter_Personaggi
+  - action: utter_Personaggi1
+  - action: utter_Personaggi2
+  - action: utter_Personaggi3
+  - action: utter_Personaggi4
+  - action: utter_Personaggi5
+  - intent: chi
+  - action: action_Personaggio
+  - intent: salutiFINE
+  - action: utter_salutiFINE
+
+- story: Eta
+  steps:
+  - intent: start
+  - action: utter_nome
+  - intent: nome_personale
+  - action: utter_salutiINIZIO
+  - intent: cercaProdotto
+  - action: utter_Prodotto
+  - intent: filtra_eta
+  - action: action_my_eta
+  - intent: salutiFINE
+  - action: utter_salutiFINE
+
+
+- story: out_of_scope path
+  steps:
+  - intent: out_of_scope
+  - action: action_my_fallback
+
+
+
+
+
+
+

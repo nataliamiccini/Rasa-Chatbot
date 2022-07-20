@@ -1,0 +1,167 @@
+version: "3.0"
+
+config:
+    store_entities_as_slots: true
+session_config:
+    session_expiration_time: 60
+    carry_over_slots_to_new_session: true
+
+
+intents:
+  - start
+  - salutiFINE
+  - cercaProdotto
+  - Negativo
+  - quale_prodotto:
+      use_entities: true
+  - chi:
+      use_entities: true
+  - luoghi
+  - info_clementoni
+  - orari_giorni
+  - chi_avete
+  - filtra_eta
+  - nome_personale:
+      use_entities: true
+  - continue
+  - scegli_età:
+      use_entities: true
+
+entities:
+  - prodotto
+  - personaggio
+  - età
+  - nome
+slots:
+  prodotto:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: prodotto
+  personaggio:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: personaggio
+  età:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: età
+  nome:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: nome
+
+responses:
+
+  utter_salutiINIZIO:
+  - text: "Ciao {nome}👋, io mi chiamo Penelope🕵️‍♀️ e sono a tua disposizione. Posso darti informazioni riguardo gli orari di apertura del negozio, sulla nostra azienda, su dove ci troviamo o aiutarti nella ricerca di un prodotto. In cosa posso esserti utile?"
+
+  utter_nome:
+  - text: "Benvenuto 🤗, come ti chiami?"
+
+  utter_salutiFINE:
+  - text: "Spero di esserti stata di aiuto {nome}!😊\nSe posso fare altro per te digita /continue."
+
+  utter_saluti:
+  - text: "Ok, torna a trovarci presto {}! 👋"
+
+  utter_Prodotto:
+  - text: "Perfetto, se stai cercando un prodotto in particolare puoi indicarmi il nome e ti darò qualche info.\nAltrimenti ti aiuterò a cercare il prodotto più adatto a te in base al tuo personaggio preferito o alla categoria d'eta."
+
+  utter_luoghi:
+  - text: "Il punto vendita clementoni si trova in  Zona Ind.le, 62019 Fontenoce MC.🏠\nE' aperto da Lunedì a Venerdì dalle 9.00 alle 18.00"
+    image: "https://www.radioerre.it/wp-content/uploads/2020/11/PuntoVenditaClementoni_esterno-002.jpg"
+
+  utter_info:
+  - text: "La nostra storia tutta italiana inizia negli anni '60, 
+          quando Mario Clementoni fece scoprire a tutti quanto il gioco fosse importante.\n
+          Inventò il primo gioco da tavolo e da allora non ci siamo più fermati, portando avanti la sua filosofia e aiutando
+          i bambini di tutto il mondo a immaginare e crescere."
+
+  utter_giorni_orari:
+  - text: "Clementoni è aperto da Lunedì a Venerdì dalle 9.00 alle 18.00 ⌚"
+
+  utter_Personaggi:
+  - text: "Perfetto, ecco il nostro catalogo dei personaggi:\n"
+
+  utter_Personaggi1:
+  - text: "Marvel\n"
+    image: "https://www.2duerighe.com/wp-content/uploads/2021/02/Marvel-Cinematic-Universe.jpg"
+
+  utter_Personaggi2:
+  - text: "Frozen\n"
+    image: "https://www.cinematown.it/wp-content/uploads/2018/11/frozen-1-1024x576-1.jpg"
+
+  utter_Personaggi3:
+  - text: "Me contro Te\n"
+    image: "https://m.media-amazon.com/images/I/81jyYE6V7yS._AC_SY606_.jpg"
+
+  utter_Personaggi4:
+  - text: "Bing \n"
+    image: "https://assets.afcdn.com/story/20210420/2116998_w960h540c1cx480cy384cxt0cyt0cxb960cyb768.jpg"
+  
+  utter_Personaggi5:
+  - text: "Sei interessato ad uno di questi? Indicami quale e ti mostrerò i nostri giochi migliori disponibili!"
+
+  
+  utter_fallback:
+  - buttons:
+    - title: orari_giorni
+      payload: /orari_giorni
+    - title: info_clementoni
+      payload: /info_clementoni
+    - title: luoghi
+      payload: /luoghi
+    - title: cercaProdotto
+      payload: /cercaProdotto
+    text: Per favore, scegli una delle seguenti opzioni.
+    button_type: vertical
+
+  utter_scelta_eta:
+  - buttons:
+    - title: 0 mesi
+      payload: /scegli_età{{"età":"0"}}
+    - title: 6 mesi
+      payload: /scegli_età{{"età":"6"}}
+    - title: 9 mesi
+      payload: /scegli_età{{"età":"9"}}
+    - title: da 1 a 3 anni
+      payload: /scegli_età{{"età":"1-3"}}
+    - title: da 4 a 6 anni
+      payload: /scegli_età{{"età":"4-6"}}
+    - title: da 7 a 9 anni
+      payload: /scegli_età{{"età":"7-9"}}
+    - title: piu di 10 anni
+      payload: /scegli_età{{"età":"10"}}
+    text: Perfetto! Perfavore, seleziona una tra le seguenti fasce d'eta' così da poterti indicare i prodotti più adatti!
+    button_type: vertical
+  
+
+actions:
+  - utter_salutiINIZIO
+  - utter_nome
+  - utter_saluti
+  - utter_salutiFINE
+  - utter_Prodotto 
+  - utter_luoghi
+  - utter_info
+  - utter_giorni_orari
+  - utter_Personaggi
+  - utter_Personaggi1
+  - utter_Personaggi2
+  - utter_Personaggi3
+  - utter_Personaggi4
+  - utter_Personaggi5
+  - utter_fallback
+  - utter_scelta_eta
+  - action_Eta
+  - action_my_fallback
+  - action_my_eta
+  - action_Prodotto
+  - action_Personaggio
+forms: {}
+e2e_actions: []

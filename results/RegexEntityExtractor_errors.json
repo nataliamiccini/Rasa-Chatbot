@@ -1,0 +1,36 @@
+[
+  {
+    "text": "voglio acquistare [Dove lo metto]?(prodotto)",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "prodotto",
+        "start": 19,
+        "end": 32,
+        "value": "Dove lo metto",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "vorrei avere informazioni riguardo Ultimate Spiderman",
+    "entities": [
+      {
+        "start": 35,
+        "end": 53,
+        "value": "Ultimate Spiderman",
+        "entity": "prodotto"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "prodotto",
+        "start": 35,
+        "end": 53,
+        "confidence_entity": 0.998777449131012,
+        "value": "Ultimate Spiderman",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

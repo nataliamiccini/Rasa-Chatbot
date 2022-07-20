@@ -1,0 +1,276 @@
+version: "3.0"
+
+nlu:
+- intent: start
+  examples: |
+    - ciao
+    - salve
+    - buongiorno
+    - buonpomeriggio
+    - buonasera
+    - hey
+    - ehilà
+    - we
+    - inizio 
+    - iniziamo
+    - start
+
+- intent: salutiFINE
+  examples: |
+    - Arrivederci
+    - Buona giornata
+    - Buon proseguimento
+    - Alla prossima
+    - addio
+    - fine
+    - finiamo
+    - a presto
+    - grazie e arrivederci
+    - la ringrazio
+    - Grazie mille!
+    - Grazie tante e buona giornata
+    - Molto gentile
+    - Grazie molte
+    - grazie della disponibilità
+    - grazie Penelope
+    - Infinite grazie
+    - Ti ringrazio e arrivederci
+    - grazie e ciao
+    - ok, grazie
+
+- intent: nome_personale
+  examples: |
+    - Ciao, il mio nome è [Natalia](nome)
+    - Mi chiamo [Asya](nome)
+    - Io sono [Gianmarco](nome)
+    - Ciao, sono [Matteo](nome), piacere!
+    - Piacere, mi chiamo [Giulia](nome)
+
+- lookup: nome
+  examples: |
+    - Natalia
+    - Asya
+    - Gianmarco
+    - Sofia
+    - Aurora
+    - Giulia
+    - Ginevra
+    - Alice
+    - Emma
+    - Giorgia
+    - Beatrice
+    - Greta
+    - Vittoria
+    - Domenico
+    - Alessandro
+    - Lorenzo
+    - Diego
+    - Tommaso
+    - Riccardo
+    - Matteo
+    - Lorenzo
+    - Leonardo
+    - Gabriele
+    - Edoardo
+    - Samuele
+    - Luca
+    - Filippo
+    - Daniele
+    - Nicolò
+    - Alessio
+    - Mattia
+
+- intent: cercaProdotto
+  examples: |
+    - che prodotti avete?
+    - che mi consigli?
+    - acquistare un prodotto
+    - vorrei ordinare un prodotto
+    - vorrei visionare il catalogo
+    - comprare
+    - sto cercando un gioco
+    - di che giochi disponete?
+    - voglio fare un regalo
+    - tipi di giocattoli
+
+- intent: Negativo
+  examples: |
+    - no
+    - not
+    - No, grazie
+
+- intent: quale_prodotto
+  examples: |
+    - il prodotto è [scienze al microscopio](prodotto)
+    - sto cercando [Tombola](prodotto)
+    - vorrei [Play creative minimarket](prodotto)
+    - voglio acquistare [Dove lo metto]?(prodotto)
+    - [nail art studio](prodotto)
+    - [baby robot](prodotto)
+    - [robot in movimento](prodotto)
+    - [Mistery English](prodotto)
+    - [Il collegio](prodotto)
+    - vorrei informazioni su [Marvel Avengers 1000 pezzi](prodotto)
+    - vorrei sapere qualcosa su [Marvel 1000 pezzi](prodotto)
+    - vorrei avere informazioni riguardo [Ultimate Spiderman](prodotto)
+    - [Il giardino di Bing](prodotto)
+    - [Gioca e associa](prodotto)
+    - Penelope, vorrei qualche informazione sul gioco [Jewels Collections](prodotto) di Frozen, puoi aiutarmi?
+
+- lookup: prodotto
+  examples: |
+    - Baby Robot
+    - Baby Octo
+    - Esploramondo Digital
+    - Nail Art studio
+    - Scienze al microscopio
+    - Il collegio
+    - Robot in movimento
+    - Tombola
+    - Mistery English
+    - Play Creative Minimarket
+    - Beauty science
+    - Nail mania
+    - Crazy artist 
+    - Dove lo metto
+    - Il giardino di Bing
+    - Gioca e associa
+    - Marvel 1000 pezzi
+    - Marvel Avengers 1000 pezzi
+    - Il tappeto gigante interattivo
+    - Magic Crystal set
+    - Spa laboratory
+    - Ice Lolly
+    - Sweet cloud cot mobile
+    - Katy the kitty
+    - Draghetto birichino
+    - Betta dolce orsetta
+    - Giostra degli animali
+    - Valentino Scooterino
+    - Ippopotamo ballerino
+    - Bubu cagnolino Cucu
+    - La mia prima macchinina
+    - Tellie
+    - Rubamazzo
+    - Mimo 
+    - Primo alfabeto
+    - Butterfly beauty set
+    - Ecosystem
+    - Jewels Collections
+
+- intent: chi_avete
+  examples: |
+    - che personaggi ci sono disponibili?
+    - che personaggi avete?
+    - ricerca per personaggio
+    - puoi farmi una lista dei personaggi?
+    - dimmi i personaggi
+    - non conosco i personaggi
+    - non so che personaggi avete
+    - voglio cercare un personaggio
+
+- intent: chi
+  examples: |
+    - vorrei un gioco con i personaggi della [Marvel](personaggio)
+    - avrei bisogno di un gioco di [Frozen](personaggio)
+    - sto cercando un gioco dei [Me contro Te](personaggio)
+    - [Bing](personaggio)
+    - che altri prodotti di [Frozen](personaggio) avete disponibili?
+
+- lookup: personaggio
+  examples: |
+    - Marvel
+    - Frozen
+    - Me contro Te
+    - Bing
+
+- intent: filtra_eta
+  examples: |
+    - vorrei filtrare i giochi per età
+    - vorrei fare una ricerca in base all'età 
+    - quali sono le fasce d'età?
+    - per quali età avete giochi disponibili?
+    - indicami l'età, Perfavore!
+
+- intent: luoghi
+  examples: |
+    - dove vi posso trovare?
+    - dove sono i vostri negozi?
+    - dov'è clementoni?
+    - Qual'è il negozio più vicino?
+    - mandami indirizzo clementoni
+    - l'indirizzo del nogozio
+    - cerca luogo clementoni
+    - dove si trova clementoni?
+    - vorrei avere alcune informazioni sul luogo dell'azienda
+
+- intent: info_clementoni
+  examples: |
+    - chi siete?
+    - quando è nata l'azienda?
+    - raccontami di clementoni
+    - info sull'azienda clementoni
+    - dimmi qualcosa dell'azienda clementoni
+    - parlami dell'azienda
+    - vorrei avere alcune informazioni sull'azienda
+
+- intent: orari_giorni
+  examples: |
+    - dimmi gli orari
+    - vorrei sapere gli orari di apertura
+    - vorrei informazioni riguardo gli orari 
+    - che orari fate?
+    - quando siete aperti?
+    - orario e giorno di apertura
+    - giorni in cui clementoni è aperto
+    - dimmi i giorni di apertura
+
+- intent: out_of_scope
+  examples: |
+    - blablabla
+    - sadasdasdasd
+    - hmmmmm
+    - hahahahhaha
+    - i'm sleeping
+    - what's the wheather update
+    - aeijfpvefvkèdlv
+    - lmlmlmlm
+    - uecwjeèqrpo
+    - aaaaaaaaaaaa
+    - pppppppppp
+    - kkkkkkk
+    - smdcspkèsj
+    - non so cosa fare
+    - cosa posso fare
+    - a cosa servi
+    - quali sono le tue funzioni
+    - help
+    - aiuto
+    - mi serve aiuto
+
+- intent: scegli_età
+  examples: |
+    - [0](età)
+    - [6](età)
+    - [9](età)
+    - [1-3](età)
+    - [4-6](età)
+    - [7-9](età)
+    - [10](età)
+
+
+- lookup: età
+  examples: |
+    - 0
+    - 6
+    - 9
+    - 1-3
+    - 4-6
+    - 7-9
+    - 10
+
+- intent: continue
+  examples: |
+    - voglio continuare
+    - continue
+    - continuare  

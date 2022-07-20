@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-eta",
+      "2": "I-eta",
+      "3": "L-eta",
+      "4": "U-eta",
+      "5": "B-personaggio",
+      "6": "I-personaggio",
+      "7": "L-personaggio",
+      "8": "U-personaggio",
+      "9": "B-prodotto",
+      "10": "I-prodotto",
+      "11": "L-prodotto",
+      "12": "U-prodotto",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-eta": 1,
+      "I-eta": 2,
+      "L-eta": 3,
+      "U-eta": 4,
+      "B-personaggio": 5,
+      "I-personaggio": 6,
+      "L-personaggio": 7,
+      "U-personaggio": 8,
+      "B-prodotto": 9,
+      "I-prodotto": 10,
+      "L-prodotto": 11,
+      "U-prodotto": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

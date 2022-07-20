@@ -1,0 +1,69 @@
+version: "3.0"
+
+rules:
+
+- rule: Riferisci le informazioni ogni volta che ti vengono chieste
+  steps:
+  - intent: info_clementoni
+  - action: utter_info
+
+- rule: Riferisci gli orari ogni volta che ti vengono chiesti
+  steps:
+  - intent: orari_giorni
+  - action: utter_giorni_orari
+
+- rule: Riferisci informazioni riguardo i luoghi ogni volta che ti vengono chiesti
+  steps:
+  - intent: luoghi
+  - action: utter_luoghi
+
+- rule: Saluti
+  steps:
+  - intent: start
+  - action: utter_nome
+
+- rule: SalutiFine
+  steps:
+  - intent: salutiFINE
+  - action: utter_salutiFINE
+
+- rule: Esegui l'azione per il prodotto
+  steps:
+  - intent: quale_prodotto
+  - action: action_Prodotto
+
+- rule: Esegui l'azione per il personaggio
+  steps:
+  - intent: chi
+  - action: action_Personaggio
+
+- rule: Esegui  l'azione per il fallback
+  steps:
+  - intent: out_of_scope
+  - action: action_my_fallback
+
+- rule: Esegui 
+  steps:
+  - intent: cercaProdotto
+  - action: utter_Prodotto
+
+- rule: Esegui1 
+  steps:
+  - intent: scegli_età
+  - action: action_Eta 
+
+- rule: Esegui2
+  steps:
+  - intent: chi_avete
+  - action: utter_Personaggi
+  - action: utter_Personaggi1
+  - action: utter_Personaggi2
+  - action: utter_Personaggi3
+  - action: utter_Personaggi4
+  - action: utter_Personaggi5
+
+
+
+
+
+

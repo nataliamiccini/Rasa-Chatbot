@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-età",
+      "2": "I-età",
+      "3": "L-età",
+      "4": "U-età",
+      "5": "B-nome",
+      "6": "I-nome",
+      "7": "L-nome",
+      "8": "U-nome",
+      "9": "B-personaggio",
+      "10": "I-personaggio",
+      "11": "L-personaggio",
+      "12": "U-personaggio",
+      "13": "B-prodotto",
+      "14": "I-prodotto",
+      "15": "L-prodotto",
+      "16": "U-prodotto",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-età": 1,
+      "I-età": 2,
+      "L-età": 3,
+      "U-età": 4,
+      "B-nome": 5,
+      "I-nome": 6,
+      "L-nome": 7,
+      "U-nome": 8,
+      "B-personaggio": 9,
+      "I-personaggio": 10,
+      "L-personaggio": 11,
+      "U-personaggio": 12,
+      "B-prodotto": 13,
+      "I-prodotto": 14,
+      "L-prodotto": 15,
+      "U-prodotto": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]
